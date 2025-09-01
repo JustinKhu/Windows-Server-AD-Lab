@@ -29,4 +29,4 @@ Practiced how to use Group Policy Objects and gaining fundamental knowledge of m
 
 **Phase 3: Practical Helpdesk Scenarios and AD Issues**  
 
-Simulating a variety of both common helpdesk tickets and common issues with Active Directory that users will encounter. 
+Simulated a variety of both common helpdesk tickets and common issues with Active Directory that users will encounter. 
