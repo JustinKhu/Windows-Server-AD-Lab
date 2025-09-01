@@ -25,4 +25,8 @@ Created OUs for Users based off of department e.g. HR, IT. Created User accounts
 
 **Phase 2: Group Policy**
 
-Configured account lockout policy to set maximum password age and account lockout threshold and duration.
+Practiced how to use Group Policy Objects and gaining fundamental knowledge of mapping network drives, deploying software shortcuts, and managing/securing computers in the domain. 
+
+**Phase 3: Practical Helpdesk Scenarios and AD Issues**  
+
+Simulating a variety of both common helpdesk tickets and common issues with Active Directory that users will encounter. 
