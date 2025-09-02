@@ -13,3 +13,10 @@
 **Solution:** Open ADUC and search for the user account using the search function (searching the entire domain). Open the acccount properties and fill in the updated information in the general, address, and Organization tabs. 
 
 **Verification:** Click Apply and OK. Close and reopen the tab to ensure the changes were saved. 
+
+**3. Scenario:** The user has requested that their password be reset as they have forgotten it. 
+
+**Solution:** Open ADUC and search for the user. Right-click on their account and select 'Reset password'. Set a new password and ensure the checkbox that forces the user to create a new password at next logon is selected. Tell the user their temporary password and that they can change it immediately upon logon. 
+
+**Verification:** Open up command prompt and enter the command 'net user patty /domain'. The following output will reveal information regarding their password. 
+
