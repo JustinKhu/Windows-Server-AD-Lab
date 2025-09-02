@@ -1,6 +1,6 @@
 **Overall Objective: Configure and create GPOs** 
 
-**Objective:** Create and map shared and personal drives for a user. 
+**Objective 1:** Create and map shared and personal drives for a user. 
 
 **Steps undertaken:** 
 
@@ -22,6 +22,8 @@
 
 
 **Objective 2:** Configure GPO to enforce a standard wallpaper for users in a specific OU. 
+
+**Steps Undertaken:** 
 
 1. Create folder 'Wallpapers' and configured settings to share the folder on the network and allow everyone to have read permissions. Allowed Authenticated Users to have Read & execute permissions.
 
