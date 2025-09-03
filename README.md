@@ -30,3 +30,8 @@ Practiced how to use Group Policy Objects and gaining fundamental knowledge of m
 **Phase 3: Practical Helpdesk Scenarios and AD Issues**  
 
 Simulated a variety of both common helpdesk tickets and common issues with Active Directory that users will encounter. 
+
+
+**Extras:** 
+
+* Remotely connected to client VM using Remote Desktop. Required some troubleshooting (editing firewall settings, setting up GPO's and/or using cmd to allow remote connections).
