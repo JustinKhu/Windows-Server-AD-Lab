@@ -35,4 +35,5 @@ Simulated a variety of both common helpdesk tickets and common issues with Activ
 **Extras:** 
 
 * Remotely connected to client VM using Remote Desktop. Required some troubleshooting (editing firewall settings, setting up GPO's and/or using cmd to allow remote connections).
-* Installed PDQ Deploy and experimented with deploying software applications to client VM.  
+* Installed PDQ Deploy and experimented with deploying software applications to client VM.
+* Installed print server and added 'HR' OU to security permissions. Added printer on 'Patty' user profile. 
