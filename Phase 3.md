@@ -20,3 +20,8 @@
 
 **Verification:** Open up command prompt and enter the command 'net user patty /domain'. The following output will reveal information regarding their password. 
 
+**4. Scenario:** A consultant/contract worker has joined the company. I'm tasked with creating a user account for them and delegating permissions in order for them to perform their role. 
+
+**Solution**: Created a new OU named 'Consultants' and created a user 'Scott' in that OU. Opened delegation control in ADUC, added user 'Scott' and delegated control to allow for resetting user passwords and forcing password changes. 
+
+**Verification:** Logged in as 'Scott' user and opened ADUC. Opening the properties of another user account showed that certain options such as setting account expiry and unlocking accounts were unavailable. 
