@@ -33,4 +33,35 @@
 
 4. Opened Group Policy Management editor for the new GPO and configured wallpaper settings by adding the UNC path \\Server2022\Wallpapers\Capture.png.
 
-5. Verified by logging onto the client user 'Patty' (which is in the HR OU). Opened cmd and entered 'gpupdate /force' followed by 'logoff' to enable the changes to be applied. 
+5. Verified by logging onto the client user 'Patty' (which is in the HR OU). Opened cmd and entered 'gpupdate /force' followed by 'logoff' to enable the changes to be applied.
+
+
+**Objective 3:** Configure a GPO to create a shortcut of a software application for users in the 'IT' OU. 
+
+**Steps Undertaken:** 
+
+1. Created folder 'C:\Shares\Software' to hold the shortcuts. Enabled sharing and configured permissions to allow everyone to have Read permissions.
+
+2. Linked new GPO to 'IT' in Group Policy Management. Created a new shortcut.
+
+3. Configured shortcut properties and set the target path as '\\Server2022\Shares\Software\notepad.exe'.
+
+4. Verified by logging in as a user in the 'IT' OU. Used 'gpupdate /force' and 'gpresult /r' to update/verify policies. The shortcut was present but the app would not open.
+
+**Troubleshooting solutions attempted:** 
+
+  * Copied notepad.exe from the shared folder to client desktop and attempted to run it.
+  * Checked domain policies on client machine.
+  * Made a fresh copy of notepad.exe into the shared folder.
+  * Checked file permissions of notepad.exe in the shared folder.
+  * Tried different copy method (cmd)
+  * Checked file attributes of notepad.exe
+  * Copied notepad.exe to a new test folder.
+
+**What Worked:**
+
+1. Copied a different software (calc.exe) to the shared folder. This application worked which suggests that the issue is with notepad.exe itself and not any permission or server issue.
+
+2. Created a batch file named 'notepad.bat' in the shared folder.
+
+3. Deployed the batch file in Group Policy, with the target path being '\\Server2022\Software\notepad.bat'. 
