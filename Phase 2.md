@@ -64,4 +64,6 @@
 
 2. Created a batch file named 'notepad.bat' in the shared folder.
 
-3. Deployed the batch file in Group Policy, with the target path being '\\\Server2022\Software\notepad.bat'. 
+3. Deployed the batch file in Group Policy, with the target path being '\\\Server2022\Software\notepad.bat'.
+
+4. Ran the shortcut on the client VM and verified that it opened as intended. 
