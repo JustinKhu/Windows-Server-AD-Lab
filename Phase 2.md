@@ -6,7 +6,7 @@
 
 1. Opened Server Manager and created two shares named 'HR' and 'Personal' in the Shares tab.
 
-2. Opened ADUC and created a 'HR' and 'Personal' security group in Users. Added the network path and a very short description (\Server2022\hr (shared folder)).
+2. Opened ADUC and created a 'HR' and 'Personal' security group in Users. Added the network path and a very short description (\\Server2022\hr (shared folder)).
 
 3. Added user account 'Patty' to both groups in the members tab. Verified by navigating to the user accounts properties in the 'Member of' tab to ensure that they were properly added to both groups.
 
@@ -14,7 +14,7 @@
 
 5. Configured share options to allow read/write permissions for 'HR' security group.
 
-6. Verified configuration success by logging onto the 'Patty' user on a second VM. Added the shared folder by opening the Map Network Drive menu and inputting the network path '\\Server2022\hr'. Ensure 'reconnect at sign-in' is checked to ensure the user connects to the shared folder every time they login.
+6. Verified configuration success by logging onto the 'Patty' user on a second VM. Added the shared folder by opening the Map Network Drive menu and inputting the network path '\\\Server2022\hr'. Ensure 'reconnect at sign-in' is checked to ensure the user connects to the shared folder every time they login.
 
 7. Found 'Patty' user in ADUC and opened properties. Selected the option to connect a path and entered '\\\SERVER2022\Personal\%username%' to create a folder for the desired user.
 
@@ -27,11 +27,11 @@
 
 1. Create folder 'Wallpapers' and configured settings to share the folder on the network and allow everyone to have read permissions. Allowed Authenticated Users to have Read & execute permissions.
 
-2. Added the share path on client VM '\\Server2022\Wallpapers'.
+2. Added the share path on client VM '\\\Server2022\Wallpapers'.
 
 3. Open Group Policy management console in Server Manager. Navigated to Group Policy Object container and created new GPO named 'HR - Default Wallpaper'.
 
-4. Opened Group Policy Management editor for the new GPO and configured wallpaper settings by adding the UNC path \\Server2022\Wallpapers\Capture.png.
+4. Opened Group Policy Management editor for the new GPO and configured wallpaper settings by adding the UNC path \\\Server2022\Wallpapers\Capture.png.
 
 5. Verified by logging onto the client user 'Patty' (which is in the HR OU). Opened cmd and entered 'gpupdate /force' followed by 'logoff' to enable the changes to be applied.
 
@@ -44,7 +44,7 @@
 
 2. Linked new GPO to 'IT' in Group Policy Management. Created a new shortcut.
 
-3. Configured shortcut properties and set the target path as '\\Server2022\Shares\Software\notepad.exe'.
+3. Configured shortcut properties and set the target path as '\\\Server2022\Shares\Software\notepad.exe'.
 
 4. Verified by logging in as a user in the 'IT' OU. Used 'gpupdate /force' and 'gpresult /r' to update/verify policies. The shortcut was present but the app would not open.
 
