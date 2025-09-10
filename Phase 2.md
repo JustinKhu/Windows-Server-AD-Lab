@@ -6,7 +6,7 @@
 
 1. Opened Server Manager and created two shares named 'HR' and 'Personal' in the Shares tab.
 
-2. Opened ADUC and created a 'HR' and 'Personal' security group in Users. Added the network path and a very short description (\\Server2022\hr (shared folder)).
+2. Opened ADUC and created a 'HR' and 'Personal' security group in Users. Added the network path and a very short description (\\\Server2022\hr (shared folder)).
 
 3. Added user account 'Patty' to both groups in the members tab. Verified by navigating to the user accounts properties in the 'Member of' tab to ensure that they were properly added to both groups.
 
