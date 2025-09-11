@@ -25,3 +25,11 @@
 **Solution**: Created a new OU named 'Consultants' and created a user 'Scott' in that OU. Opened delegation control in ADUC, added user 'Scott' and delegated control to allow for resetting user passwords and forcing password changes. 
 
 **Verification:** Logged in as 'Scott' user and opened ADUC. Opening the properties of another user account showed that certain options such as setting account expiry and unlocking accounts were unavailable. 
+
+
+**5. Scenario:** Patty from HR needs access to employee data to perform her job. 
+
+**Solution:** Created a new security group named 'Employee Data' in ADUC inside the 'HR' OU. In the actual Employee Data folder located on the server, opened properties and enabled Sharing in the advanced settings. Then added the security group as an authenticated user and checked 'Read, List folder contents, Read & execute'. Edited the security group in ADUC to add user 'Patty' as a member of the group. 
+
+
+**Verification:** Logged in as user 'Patty'. Used gpupdate /force in the command prompt. Signed out and back in and entered the UNC path '\\Server2022\Employee Data$'. 
