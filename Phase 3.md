@@ -32,4 +32,4 @@
 **Solution:** Created a new security group named 'Employee Data' in ADUC inside the 'HR' OU. In the actual Employee Data folder located on the server, opened properties and enabled Sharing in the advanced settings. Then added the security group as an authenticated user and checked 'Read, List folder contents, Read & execute'. Edited the security group in ADUC to add user 'Patty' as a member of the group. 
 
 
-**Verification:** Logged in as user 'Patty'. Used gpupdate /force in the command prompt. Signed out and back in and entered the UNC path '\\Server2022\Employee Data$'. 
+**Verification:** Logged in as user 'Patty'. Used gpupdate /force in the command prompt. Signed out and back in and entered the UNC path '\\\Server2022\Employee Data$'. 
